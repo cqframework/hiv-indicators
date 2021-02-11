@@ -1,0 +1,27 @@
+{
+  "resourceType": "Library",
+  "id": "HIVIndicators",
+  "name": "HIVIndicators",
+  "title": "HIV Indicators",
+  "status": "active",
+  "experimental": true,
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/codesystem-library-type.html",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "url": "http://wiki.ihe.net/index.php/Aggregate_Data_Exchange_-_HIV"
+    }
+  ],
+  "content": [
+    {
+      "id": "ig-loader-HIVIndicators.cql"
+    }
+  ]
+}
