@@ -1,0 +1,27 @@
+{
+  "resourceType": "Library",
+  "id": "HIVINDAV1",
+  "name": "HIVINDAV1",
+  "title": "HIV.IND.AV.1 On ART At End of Measurement Period",
+  "status": "active",
+  "experimental": true,
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/codesystem-library-type.html",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "url": "http://wiki.ihe.net/index.php/Aggregate_Data_Exchange_-_HIV"
+    }
+  ],
+  "content": [
+    {
+      "id": "ig-loader-HIVINDAV1.cql"
+    }
+  ]
+}

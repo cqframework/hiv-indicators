@@ -1,0 +1,36 @@
+<Measure xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/measure.xsd">
+  <id value="HIVINDAV1"/>
+  <url value="http://ohie.org/Measure/HIVINDAV1"/>
+  <identifier>
+    <system value="http://ohie.org/Measure/"/>
+    <value value="HIV.IND.AV.1"/>
+  </identifier>
+  <version value="0.0.0"/>
+  <name value="HIVINDAV1"/>
+  <title value="HIV.IND.AV.1 On ART at End of Measurement Period"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2018-03-08"/>
+  <publisher value="Open HIE"/>
+  <description value="Number and percentage of people on ART among all people living with HIV at the end of the reporting period"/>
+  <relatedArtifact>
+    <type value="derived-from"/>
+    <url value="http://wiki.ihe.net/index.php/Aggregate_Data_Exchange_-_HIV"/>
+  </relatedArtifact>
+  <library value="http://ohie.org/Library/HIVINDAV1"/>
+  <scoring>
+    <coding><code value="proportion"/></coding>
+  </scoring>
+  <!-- Option 1: Mashup -->
+  <group>
+    <code><coding><system value="http://ihe.net/qrph/adx/"/><code value="QRPH_ADX_ART1_N"/></coding></code>
+    <description value="Number and percentage of people on ART among all people living with HIV at the end of the reporting period"/>
+    <population>
+      <code><text value="cohort"/></code>
+      <criteria>
+	    <language value="text/cql-identifier"/>
+	    <expression value="Numerator"/>
+      </criteria>
+    </population>
+  </group>
+</Measure>
