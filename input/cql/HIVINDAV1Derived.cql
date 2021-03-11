@@ -6,15 +6,15 @@ Includes the original indicator, HIVINDAV1, exposes the measure criteria
 directly, and then overrides the Age Group stratifier criteria with an
 implementation specific age ranges library
 */
-library HIVINDAV1Derived
+library HIVINDAV1Derived  version '0.1.0'
 
 using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
 
-include HIVINDAV1
+include HIVINDAV1 version '0.1.0'
 
-include AgeRangesImplementerSpecific called AR
+include AgeRangesImplementerSpecific version '0.1.0' called AR
 
 context Patient
 
