@@ -18,6 +18,7 @@ Numerator: Number of people on ART at the end of the reporting period (programme
 using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
+include AgeRangesFine called AR
 
 codesystem "HIV Codes": 'TBD' // { treatment-outcome, plus TreatmentOutcome codes }
 
@@ -61,3 +62,8 @@ define "Denominator":
 
 define "Numerator":
   "On ART at end of Measurement Period"
+
+/* Stratifier criteria */
+define "Age Group": AR."Age Group"
+
+define "Gender": Patient.gender

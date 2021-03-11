@@ -1,0 +1,31 @@
+{
+  "resourceType": "Library",
+  "id": "HIVINDAV1Derived",
+  "name": "HIVINDAV1Derived",
+  "title": "HIV.IND.AV.1 (Derived) On ART At End of Measurement Period",
+  "status": "active",
+  "experimental": true,
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/codesystem-library-type.html",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "url": "http://wiki.ihe.net/index.php/Aggregate_Data_Exchange_-_HIV"
+    },
+    {
+      "type": "derived-from",
+      "resource": "http://ohie.org/fhir/Library/HIVINDAv1"
+    }
+  ],
+  "content": [
+    {
+      "id": "ig-loader-HIVINDAV1Derived.cql"
+    }
+  ]
+}

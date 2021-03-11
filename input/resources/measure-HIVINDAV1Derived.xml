@@ -1,13 +1,13 @@
 <Measure xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/measure.xsd">
-  <id value="HIVINDAV1"/>
-  <url value="http://ohie.org/Measure/HIVINDAV1"/>
+  <id value="HIVINDAV1Derived"/>
+  <url value="http://ohie.org/Measure/HIVINDAV1Derived"/>
   <identifier>
     <system value="http://ohie.org/Measure/"/>
-    <value value="HIV.IND.AV.1"/>
+    <value value="HIV.IND.AV.1-Derived"/>
   </identifier>
   <version value="0.0.0"/>
-  <name value="HIVINDAV1"/>
-  <title value="HIV.IND.AV.1 On ART at End of Measurement Period"/>
+  <name value="HIVINDAV1Derived"/>
+  <title value="HIV.IND.AV.1 (Derived) On ART at End of Measurement Period"/>
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2018-03-08"/>
@@ -17,7 +17,11 @@
     <type value="derived-from"/>
     <url value="http://wiki.ihe.net/index.php/Aggregate_Data_Exchange_-_HIV"/>
   </relatedArtifact>
-  <library value="http://ohie.org/Library/HIVINDAV1"/>
+  <relatedArtifact>
+    <type value="derived-from"/>
+    <resource value="http://ohie.org/Measure/HIVINDAV1"/>
+  </relatedArtifact>
+  <library value="http://ohie.org/Library/HIVINDAV1Derived"/>
   <scoring>
     <coding><code value="proportion"/></coding>
   </scoring>
